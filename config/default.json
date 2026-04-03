@@ -1,0 +1,46 @@
+{
+  "bot": {
+    "mode": "paper",
+    "interval": 30,
+    "maxOpenTrades": 3,
+    "enableCLI": true
+  },
+  "risk": {
+    "maxRiskPerTrade": 0.02,
+    "defaultStopLossPct": 0.03,
+    "defaultTakeProfitMultiplier": 2.0,
+    "maxDailyLoss": 0.06,
+    "cooldownAfterLoss": 300,
+    "maxConsecutiveLosses": 3
+  },
+  "filters": {
+    "minLiquidityUSD": 50000,
+    "minVolumeUSD": 10000,
+    "minMarketCapUSD": 100000,
+    "maxPriceImpactPct": 2.0,
+    "blacklistedTokens": []
+  },
+  "strategy": {
+    "smcEnabled": true,
+    "bosLookback": 20,
+    "zoneLookback": 50,
+    "liquiditySweepThreshold": 0.005,
+    "minZoneStrength": 2,
+    "entryConfirmations": 2
+  },
+  "wallet": {
+    "paperBalance": 10000,
+    "currency": "USDC"
+  },
+  "journal": {
+    "path": "./journal/trades.json",
+    "csvPath": "./journal/trades.csv",
+    "enabled": true
+  },
+  "logging": {
+    "level": "info",
+    "file": "./logs/bot.log",
+    "maxFiles": 5,
+    "maxSize": "10m"
+  }
+}
