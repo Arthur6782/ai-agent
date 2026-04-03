@@ -1,0 +1,7 @@
+node_modules/
+.env
+logs/
+journal/trades.json
+journal/trades.csv
+*.log
+.DS_Store
