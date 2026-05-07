@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Runtime data — track directory structure, ignore generated contents
+data/cache/*
+data/logs/*
+data/reports/*
+!data/**/.gitkeep
