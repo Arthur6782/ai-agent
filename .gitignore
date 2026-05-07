@@ -8,3 +8,9 @@ dist/
 build/
 .venv/
 venv/
+
+# Runtime data — track directory structure, ignore generated contents
+data/cache/*
+data/logs/*
+data/reports/*
+!data/**/.gitkeep
